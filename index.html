@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرضوى لتأجير المعدات الثقيلة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+            url('وناش.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            position: relative;
+        }
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: #f59e0b;
+            opacity: 0.3;
+            z-index: -1;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 50vh; /* تقليل ارتفاع قسم البطل على الهواتف */
+            }
+            .text-4xl {
+                font-size: 2.5rem; /* تقليل حجم الخط */
+            }
+            .text-xl {
+                font-size: 1.25rem; /* تقليل حجم الخط */
+            }
+            .service-card {
+                margin-bottom: 20px; /* إضافة مسافة بين بطاقات الخدمة */
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- شريط التنقل -->
+    <!-- Navbar احترافي -->
+    <header class="fixed top-0 w-full z-50 bg-gray-900 backdrop-blur-md shadow-md">
+
+      <div class="container mx-auto px-6 lg:px-20 py-4 flex items-center justify-between font-[Cairo]">
+        
+        <!-- شعار الشركة -->
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-yellow-400 drop-shadow-md tracking-tight">
+          الرضوى
+          <span class="text-white text-base sm:text-lg font-medium ml-2">لتأجير المعدات الثقيلة</span>
+        </h1>
+    
+        <!-- روابط -->
+        <nav class="hidden md:flex space-x-6 rtl:space-x-reverse text-white font-medium text-lg">
+          <a href="#home" class="hover:text-yellow-400 transition duration-200">الرئيسية</a>
+          <a href="#about" class="hover:text-yellow-400 transition duration-200">من نحن</a>
+          <a href="#services" class="hover:text-yellow-400 transition duration-200">الخدمات</a>
+          <a href="#contact" class="hover:text-yellow-400 transition duration-200">اتصل بنا</a>
+        </nav>
+    
+        
+<!-- زر الموبايل -->
+<button id="menu-btn" class="md:hidden text-white z-[60] relative focus:outline-none">
+  <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+</button>
+
+<!-- قائمة موبايل -->
+<div id="mobile-menu" class="md:hidden hidden px-6 pt-4 pb-6 bg-gray-900 text-white text-lg font-medium space-y-4">
+  <a href="#home" class="block hover:text-yellow-400 transition duration-300">الرئيسية</a>
+  <a href="#about" class="block hover:text-yellow-400 transition duration-300">من نحن</a>
+  <a href="#services" class="block hover:text-yellow-400 transition duration-300">خدماتنا</a>
+  <a href="#contact" class="block hover:text-yellow-400 transition duration-300">اتصل بنا</a>
+</div>
+
+
+      </div>
+    </header>
+
+    
+    
+  </nav>
+    <!-- قسم البطل -->
+    <section id="home" class="hero-section h-screen flex items-center justify-center text-white animate__animated animate__fadeIn">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate__animated animate__fadeInDown">الرضوى لتأجير المعدات الثقيلة</h1>
+            <p class="text-xl md:text-2xl mb-8 animate__animated animate__fadeIn animate__delay-1s">
+                <span >شركة رائدة في مجال تأجير المعدات الثقيلة خبرة اكثر من 50 عام</span>
+            </p>
+            <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full text-lg transition duration-300 animate__animated animate__fadeInUp">
+                تواصل معنا
+            </a>
+        </div>
+    </section>
+
+ <!-- قسم من نحن -->
+<section id="about" class="py-24 bg-white font-[Cairo]">
+  <div class="container mx-auto px-6 lg:px-20">
+    
+    <!-- عنوان القسم -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-3 animate__animated animate__fadeIn">من نحن</h2>
+      <div class="w-24 h-1 mx-auto bg-yellow-400 rounded"></div>
+    </div>
+
+    <!-- المحتوى الأساسي -->
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      
+      <!-- الصورة -->
+      <div class="md:w-1/2 animate__animated animate__fadeInLeft">
+        <img src="وناشنا.jpg" alt="ونش تابع لشركة الرضوى" class="rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.1)] w-full h-[400px] object-cover object-center">
+      </div>
+
+      <!-- النص -->
+      <div class="md:w-1/2 animate__animated animate__fadeInRight text-right">
+        <p class="text-gray-700 text-xl leading-loose mb-6">
+          نحن شركة <span class="font-extrabold text-yellow-400">الرضوى لتأجير المعدات الثقيلة</span>، إحدى الشركات الرائدة في مصر في مجال تأجير المعدات الثقيلة.
+        </p>
+        <p class="text-gray-700 text-lg leading-loose mb-6">
+          نقدم خدمات تأجير معدات ثقيلة وخدمات مواقع متكاملة، مع التزامنا بأعلى معايير الجودة، لنوفّر لك المعدات اللازمة لإنجاز أعمالك بكفاءة واحترافية.
+        </p>
+        <p class="text-gray-700 text-lg leading-loose">
+          بخبرة تزيد عن <span class="font-extrabold text-yellow-400">50 عامًا</span> في المجال، اكتسبنا سمعة طيبة في تقديم معدات حديثة بجودة عالية مع الحفاظ على معايير السلامة والأمان.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+      <!-- عنوان البطاقات -->
+<h2 class="text-center text-4xl font-extrabold text-yellow-400 my-20 animate__animated animate__fadeInDown font-[Cairo]">
+  نقدم
+</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 font-[Cairo]">
+
+  <!-- كرت 1 -->
+  <div class="relative bg-white/90 backdrop-blur-md border border-yellow-300 rounded-3xl shadow-xl hover:shadow-2xl p-10 text-center transition-all duration-500 group hover:-translate-y-3 hover:scale-[1.03] animate__animated animate__fadeInUp">
+    
+    <!-- الأيقونة -->
+    <div class="absolute -top-7 left-1/2 transform -translate-x-1/2">
+      <div class="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center ring-4 ring-white shadow-md animate-bounce-slow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- المحتوى -->
+    <h3 class="text-2xl font-bold text-gray-800 mb-4 mt-10 group-hover:text-yellow-500 transition-colors duration-300">
+      معدات حديثة
+    </h3>
+    <p class="text-gray-600 text-base leading-relaxed font-medium">
+      أحدث الموديلات بأعلى مواصفات
+    </p>
+  </div>
+
+  <!-- كرت 2 -->
+  <div class="relative bg-white/90 backdrop-blur-md border border-yellow-300 rounded-3xl shadow-xl hover:shadow-2xl p-10 text-center transition-all duration-500 group hover:-translate-y-3 hover:scale-[1.03] animate__animated animate__fadeInUp animate__delay-1s">
+    <div class="absolute -top-7 left-1/2 transform -translate-x-1/2">
+      <div class="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center ring-4 ring-white shadow-md animate-bounce-slow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+    <h3 class="text-2xl font-bold text-gray-800 mb-4 mt-10 group-hover:text-yellow-500 transition-colors duration-300">
+      أسعار منافسة
+    </h3>
+    <p class="text-gray-600 text-base leading-relaxed font-medium">
+      أفضل الأسعار في السوق
+    </p>
+  </div>
+
+  <!-- كرت 3 -->
+  <div class="relative bg-white/90 backdrop-blur-md border border-yellow-300 rounded-3xl shadow-xl hover:shadow-2xl p-10 text-center transition-all duration-500 group hover:-translate-y-3 hover:scale-[1.03] animate__animated animate__fadeInUp animate__delay-2s">
+    <div class="absolute -top-7 left-1/2 transform -translate-x-1/2">
+      <div class="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center ring-4 ring-white shadow-md animate-bounce-slow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+    <h3 class="text-2xl font-bold text-gray-800 mb-4 mt-10 group-hover:text-yellow-500 transition-colors duration-300">
+      تغطية شاملة
+    </h3>
+    <p class="text-gray-600 text-base leading-relaxed font-medium">
+      لجميع المحافظات بكفاءة وسرعة
+    </p>
+  </div>
+
+</div>
+
+      
+  
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- قسم خدماتنا الاحترافي مع وصفك الأصلي -->
+<section id="services" class="py-28 bg-gray-50 font-[Cairo]">
+  <div class="container mx-auto px-6 lg:px-20">
+
+    <!-- العنوان -->
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 animate__animated animate__fadeInDown">خدماتنا</h2>
+      <div class="w-24 h-1 mx-auto bg-yellow-400 rounded-full"></div>
+    </div>
+
+    <!-- الكروت -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      
+      <!-- كرت 1 -->
+      <div class="bg-white border border-yellow-100 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 hover:scale-[1.02] animate__animated animate__fadeInUp">
+        <div class="relative h-[360px] overflow-hidden">
+          <img src="ونشنا.jpg" alt="أوناش" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">تأجير أوناش</h3>
+          <p class="text-gray-600 text-base leading-relaxed mb-6">أوناش جميع الأوزان لخدمة مواقع العمل بأمان وأعلى كفاءة</p>
+          <a href="https://wa.me/201222599707" target="_blank"
+             class="inline-block bg-yellow-400 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-yellow-500 hover:scale-105 transition duration-300 shadow-md">
+            للإستفسار
+          </a>
+        </div>
+      </div>
+
+      <!-- كرت 2 -->
+      <div class="bg-white border border-yellow-100 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 hover:scale-[1.02] animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="relative h-[360px] overflow-hidden">
+          <img src="بوكيت.jpg" alt="بوكيت" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">تأجير بوكيتات</h3>
+          <p class="text-gray-600 text-base leading-relaxed mb-6">بوكيتات بإرتفاعات متعددة تصل لاكثر من 20 متر تناسب جميع المهام في الأماكن المرتفعة</p>
+          <a href="https://wa.me/201222599707" target="_blank"
+             class="inline-block bg-yellow-400 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-yellow-500 hover:scale-105 transition duration-300 shadow-md">
+             للإستفسار
+          </a>
+        </div>
+      </div>
+
+      <!-- كرت 3 -->
+      <div class="bg-white border border-yellow-100 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 hover:scale-[1.02] animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="relative h-[360px] overflow-hidden">
+          <img src="كلارك.jpg" alt="فورك ليفت" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-3">تأجير فورك ليفت</h3>
+          <p class="text-gray-600 text-base leading-relaxed mb-6">فورك ليفت جميع الأوزان لخدمة مواقع العمل بأمان وأعلى كفاءة</p>
+          <a href="https://wa.me/201222599707" target="_blank"
+             class="inline-block bg-yellow-400 text-white font-semibold py-2.5 px-6 rounded-full hover:bg-yellow-500 hover:scale-105 transition duration-300 shadow-md">
+           للإستفسار
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- AOS for scroll animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<section id="contact" class="relative py-28 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white font-[Cairo] overflow-hidden">
+  <div class="container mx-auto px-6 lg:px-20">
+
+    <!-- العنوان -->
+    <div class="text-center mb-20" data-aos="fade-down" data-aos-duration="1000">
+      <h2 class="text-5xl font-extrabold tracking-tight text-yellow-400">اتصل بنا</h2>
+      <div class="mt-3 w-24 h-1 mx-auto bg-yellow-400 rounded-full"></div>
+      <p class="mt-6 text-gray-400 text-lg max-w-xl mx-auto">نحن هنا لخدمتك والإجابة على جميع استفساراتك في أي وقت</p>
+    </div>
+
+    <!-- الشبكة -->
+    <div class="grid md:grid-cols-2 gap-16 items-start" data-aos="fade-up" data-aos-duration="1200">
+
+      <!-- معلومات التواصل -->
+      <div class="space-y-8">
+
+        <!-- عنصر -->
+        <div class="bg-white/5 hover:bg-white/10 transition duration-300 backdrop-blur-xl rounded-2xl p-6 border border-yellow-400/10 shadow-[0_0_25px_-5px_rgba(255,255,0,0.25)]">
+          <div class="flex items-center gap-4 mb-2">
+            <svg class="w-6 h-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21L8 11.5a11 11 0 005.5 5.5l1.13-2.26a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.7 21 3 14.3 3 6V5z" />
+            </svg>
+            <h4 class="text-xl font-bold text-yellow-400">م / شريف البربري</h4>
+          </div>
+          <p class="text-lg font-medium text-gray-100">01222599707</p>
+        </div>
+
+        <div class="bg-white/5 hover:bg-white/10 transition duration-300 backdrop-blur-xl rounded-2xl p-6 border border-yellow-400/10 shadow-[0_0_25px_-5px_rgba(255,255,0,0.25)]">
+          <div class="flex items-center gap-4 mb-2">
+            <svg class="w-6 h-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21L8 11.5a11 11 0 005.5 5.5l1.13-2.26a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.7 21 3 14.3 3 6V5z" />
+            </svg>
+            <h4 class="text-xl font-bold text-yellow-400">م / ياسر البربري</h4>
+          </div>
+          <p class="text-lg font-medium text-gray-100">01001540952</p>
+        </div>
+
+        <div class="bg-white/5 hover:bg-white/10 transition duration-300 backdrop-blur-xl rounded-2xl p-6 border border-yellow-400/10 shadow-[0_0_25px_-5px_rgba(255,255,0,0.25)]">
+          <div class="flex items-center gap-4 mb-2">
+            <svg class="w-6 h-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0L6.343 16.657a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <h4 class="text-xl font-bold text-yellow-400">المكتب</h4>
+          </div>
+          <p class="text-lg font-medium text-gray-100">11 شارع البحرية - الجمرك - الإسكندرية</p>
+        </div>
+
+        <div class="bg-white/5 hover:bg-white/10 transition duration-300 backdrop-blur-xl rounded-2xl p-6 border border-yellow-400/10 shadow-[0_0_25px_-5px_rgba(255,255,0,0.25)]">
+          <div class="flex items-center gap-4 mb-2">
+            <svg class="w-6 h-6 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0L6.343 16.657a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <h4 class="text-xl font-bold text-yellow-400">الجراج</h4>
+          </div>
+          <p class="text-lg font-medium text-gray-100">الكيلو 22 - طريق إسكندرية مطروح الساحلي</p>
+        </div>
+
+      </div>
+
+      <!-- شعار و زر -->
+      <div class="flex flex-col items-center text-center space-y-12" data-aos="zoom-in" data-aos-duration="1300">
+        <div>
+          <h1 class="text-6xl font-extrabold text-yellow-400 drop-shadow-md">الرضوى</h1>
+          <p class="text-2xl font-semibold text-gray-300 mt-2">لتأجير المعدات الثقيلة</p>
+        </div>
+
+        <a href="https://wa.me/201222599707" target="_blank"
+          class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white text-xl font-semibold py-4 px-10 rounded-full shadow-2xl hover:shadow-green-500/40 transition-all duration-300 animate-pulse">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-7 h-7">
+          تواصل معنا عبر واتساب
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+<script>
+  // نوقف استرجاع مكان السكرول من المتصفح
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  // نرجع للأعلى يدويًا بعد التحميل
+  window.addEventListener("load", function () {
+    window.scrollTo(0, 0);
+  });
+</script>
+
+</body>
+</html>
